@@ -15,3 +15,12 @@ export function fetchBooks() {
     .then(books => books)
     .catch(error => console.log(error));
 }
+
+export async function asyncFetchMovies() {
+    try {
+        const response = await fetch('./data/movies.json');
+        const results = await response.json();
+    } catch (error) {
+        console.log(error);
+    }
+}
