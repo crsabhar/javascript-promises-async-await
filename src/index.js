@@ -68,3 +68,12 @@ getBooksOrMoviesAsync().then(results => {
 }).catch(error => {
     console.error("Error in getBooksOrMoviesAsync execution", error)
 });
+
+const timer1 = setTimeout(() => {
+    console.log("timer 1 has finished");
+}, 3000);
+
+const timer2 = setTimeout(() => {
+    console.log("timer 2 has finished");
+    clearTimeout(timer1)
+}, 2000);
