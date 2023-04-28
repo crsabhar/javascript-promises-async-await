@@ -1,4 +1,3 @@
-import { error } from 'jquery';
 import { fetchWithTimeout, fetchMovies, fetchBooks, asyncFetchMovies, asyncFetchBooks } from './services';
 const movies = require('./data/movies.json');
 
